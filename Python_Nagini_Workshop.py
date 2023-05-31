@@ -127,7 +127,10 @@ class TicTacToe:
             '''To do: assign values of row and col from userInput'''
             # <hint: a, b = 0, 1>
             row, col = 
-            if self.board[row - 1][col - 1] == "-":             # fixing spot only if the spot is empty
+            if self.board[row - 1][col - 1] != "-":             # fixing spot only if the spot is empty
+                print("The spot is already taken. ")
+                continue
+            else: 
                 self.fix_spot(row - 1, col - 1, player)
             if self.player_win(player):             # checking if the current player has won the game
                 print("Player {} wins the game!".format(player))
