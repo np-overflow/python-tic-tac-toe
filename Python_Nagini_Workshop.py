@@ -115,7 +115,7 @@ class TicTacToe:
     
     ## starting the program
     def start(self):
-        '''To do: call out the function to create a board'''
+        '''To do: call out the method to create a board'''
 
         player = self.get_random_first_player()
         while True:
