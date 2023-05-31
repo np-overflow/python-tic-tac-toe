@@ -59,7 +59,7 @@ class TicTacToe:
             if win:            # if not a column win, continue checking for other wins
                 return win
         
-        # checking for wins in first diagonal
+        # checking for wins in decreasing diagonal
         # O
         #   O
         #     O
@@ -73,7 +73,7 @@ class TicTacToe:
         if win:        # if not a first diagonal win, continue checking for other wins
             return win
         
-        # checking for wins in second diagonal
+        # checking for wins in increasing diagonal
         #     O
         #   O
         # O
