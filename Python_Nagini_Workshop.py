@@ -4,6 +4,7 @@ import random
 ### TicTacToe class ###
 class TicTacToe:
     ## initialising self.board = []
+    '''To do: initialise self.board = []'''
     
     ## creating the board
     def create_board(self):         # have a list for each row, and append the list into self.board
